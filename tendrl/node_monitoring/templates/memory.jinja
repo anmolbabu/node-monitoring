@@ -14,14 +14,3 @@ LoadPlugin memory
     CalculateSum true
   </Aggregation>
 </Plugin>
-
-<Plugin "threshold">
-   <Plugin "memory">
-      <Type "percent">
-         Instance used
-         FailureMax {{ Failure }}
-         WarningMax {{ Warning }}
-      </Type>
-   </Plugin>
-</Plugin>
-

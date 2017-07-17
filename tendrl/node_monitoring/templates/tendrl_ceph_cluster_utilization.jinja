@@ -10,13 +10,3 @@
         Interval 30
     </Module>
 </Plugin>
-
-<Plugin "threshold">
-    <Plugin "cluster_utilization">
-       <Type "percent">
-         Instance percent_bytes
-         FailureMax {{ Failure }}
-         WarningMax {{ Warning }}
-       </Type>
-    </Plugin>
-</Plugin>

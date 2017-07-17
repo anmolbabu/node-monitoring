@@ -2,7 +2,7 @@ LoadPlugin "write_graphite"
 
 <Plugin write_graphite>
     <Node "{{ hostname }}">
-        Host "{{ time_series_db_server }}"
+        Host "tendrl.clusters.{{ integration_id }}.nodes"
         Port "2003"
         Protocol "tcp"
         LogSendErrors true

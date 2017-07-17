@@ -16,14 +16,3 @@ LoadPlugin swap
     CalculateSum true
   </Aggregation>
 </Plugin>
-
-<Plugin "threshold">
-    <Plugin "swap">
-       <Type "percent">
-         Instance used
-         FailureMax {{ Failure }}
-         WarningMax {{ Warning }}
-       </Type>
-    </Plugin>
-</Plugin>
-
